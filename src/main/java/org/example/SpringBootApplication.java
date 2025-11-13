@@ -18,7 +18,7 @@ public class SpringBootApplication {
          */
         SpringApplication.run(SpringBootApplication.class, args);
     }
-            }
+}
 /*
     TODO Модель MVC - Model View Controller.
      Она подразумевает и требует 3-ёх слоёв:
