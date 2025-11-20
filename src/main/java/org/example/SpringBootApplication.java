@@ -17,6 +17,10 @@ public class SpringBootApplication {
          2 параметр - args - входные данные, напр-р, логин и пароль
          */
         SpringApplication.run(SpringBootApplication.class, args);
+        for (int i = 0; i < 10; i++) {
+            int rand = (int)(Math.random() * 6) + 2;
+            System.out.println(rand);
+        }
     }
 }
 /*
