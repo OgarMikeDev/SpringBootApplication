@@ -3,6 +3,7 @@ package org.example.controllers;
 import org.example.models.User;
 import org.example.services.UserCRUDService;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /*
     TODO RestController для работы с данными на одной страницы.
@@ -21,4 +22,11 @@ public class RestController {
         userCRUDService.create(user);
     }
 
+    @PostMapping("/updateInformationUser/")
+    public void updateUser(
+            @RequestParam("updateEmail") String email,
+            @RequestParam("updateFullName") String fullName,
+            @RequestParam("phoneNumber") String phoneNumberUser) {
+        userCRUDService.update(email, fullName, phoneNumberUser);
+    }
 }

@@ -23,6 +23,14 @@ public class UserCRUDService {
         userRepository.save(user);
     }
 
+    public void update(String email, String fullName, String phoneNumberUser) {
+        User user = new User();
+        user.setEmail(email);
+        user.setFullName(fullName);
+        user.setPhoneNumberUser(phoneNumberUser);
+        userRepository.save(user);
+    }
+
     public List<User> findAll() {
         return userRepository.findAll();
     }

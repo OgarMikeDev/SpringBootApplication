@@ -14,6 +14,21 @@ public class User {
     private String phoneNumberUser;
     private String password;
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public void setPhoneNumberUser(String phoneNumberUser) {
+        this.phoneNumberUser = phoneNumberUser;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 
     @Override
     public String toString() {
