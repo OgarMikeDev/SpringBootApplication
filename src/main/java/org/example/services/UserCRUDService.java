@@ -18,9 +18,19 @@ public class UserCRUDService {
     }
 
     public void create(User user) {
-        String originPassword = user.getPassword();
+        String originPassword = "";
         secretPassword(originPassword);
         userRepository.save(user);
+    }
+
+    public List<User> findAll() {
+        return userRepository.findAll();
+    }
+
+    public void delete(User user) {
+        String originPassword = "";
+        secretPassword(originPassword);
+        userRepository.delete(user);
     }
 
     //TODO Hello -> Brspj
